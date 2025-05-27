@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>重寫你的劇本</title>
+<style>
+    body {
+      font-family: sans-serif;
+      background-color: #fdf6f0;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1, h2, h3 {
+      text-align: center;
+      color: #5a3e36;
+    }
+    .card-deck {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 1rem;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.5s ease;
+    }
+    .card span {
+      display: block;
+      min-height: 3rem;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+    .card .description {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #555;
+    }
+    .card.show {
+      animation: flipIn 0.6s ease forwards;
+    }
+    @keyframes flipIn {
+      from { transform: rotateY(90deg); opacity: 0; }
+      to { transform: rotateY(0deg); opacity: 1; }
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #936d57;
+      color: white;
+      cursor: pointer;
+    }
+    .result-area {
+      background-color: #fff7f3;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+<h1>🎭 重寫你的劇本</h1>
+<p style="text-align:center; font-size:1.1rem; color:#6a4d3b; margin-top:-0.5rem;">一套陪你走進內在劇場的自我對話卡牌</p>
+<div class="section">
+<h2>為什麼設計這個遊戲？</h2>
+<p>這套卡牌結合了心理劇、敘事治療與創傷知情實務等心理學理論，設計出一套可自我引導的互動遊戲，讓每個人都有機會走進內在的情緒劇場，與自己的經驗對話。</p>
+<p>在我們的生命中，有許多未曾說出口的經歷、被壓抑的情緒與無法釐清的記憶，它們可能仍潛藏在身體與心裡，影響著當下的情緒反應與人際關係。而這套卡牌，正是為了這些「還沒被說出來的故事」而誕生。</p>
+<p>透過每一張卡牌的指引，你可以逐步扮演內在不同的角色，重回創傷經驗中的關鍵時刻，試著說出那些當時沒能說出口的話，或從現在的角度給自己一點支持與理解。</p>
+<p>這不只是「演出」，而是一場內在的自我修復儀式。我們相信，每個人都可以是自己療癒旅程的主角，這副卡牌是陪你啟程的一把鑰匙。</p>
+<h3>學理依據</h3>
+<ul>
+<li><strong>心理劇（Moreno）</strong>：透過角色扮演重現關鍵情境，使壓抑情緒得以釋放，並重構未竟的心理經驗。</li>
+<li><strong>敘事治療（White &amp; Epston）</strong>：協助個體將問題外化，重新建構生命敘事，從而賦予經驗新的意義與定位。</li>
+<li><strong>創傷知情實務</strong>：強調安全、選擇與自主，並以不造成再次創傷的方式，協助個體在可承受的節奏下與創傷經驗連結。</li>
+</ul>
+<p>每個人在人生的某些時刻，可能都經歷過痛苦、委屈、被忽略，甚至是更深層的創傷。但這些經驗往往難以言說，也難以正視，更別說療癒。</p>
+<p>這套卡牌遊戲就是為了這些時刻而設計。它透過心理劇（Psychodrama）與敘事治療（Narrative Therapy）的概念，幫助你用角色扮演與象徵性語言的方式，重新接觸過往的創傷，說出那些未竟之語，並透過新的觀點重構自我。</p>
+<p>你不需要成為專業的治療師，也不必強迫自己揭開傷口，只要用這套卡片，一步一步探索自己內心的故事，你會發現：原來你一直都有能力照顧自己、理解自己，甚至擁抱過去的傷。</p>
+</div>
+<div class="section">
+<h2>🧩 如何玩這套卡牌？</h2>
+<p>這是一套幫助你探索內心情緒、面對創傷經驗、對自己說出沒說出口的話的卡牌工具。不需要心理學背景，也不是心理測驗，而是一種「陪你演出內在故事」的過程。</p>
+<ol>
+<li><strong>依序抽出四張卡</strong>：角色卡 → 情境卡 → 對話卡 → 轉化卡。你可以唸出來、寫下來，或在心裡「演」一遍這段劇。</li>
+<li><strong>最後抽一張觀點卡</strong>，換個角度看剛剛演出的故事，像是：「如果我是旁觀者，我會怎麼說？」</li>
+<li><strong>寫下你的體會</strong>：在下方文字框寫下今天的體悟、轉折或想說的話，不必完美，只要真實。</li>
+</ol>
+<p><strong>小提醒：</strong>如果你覺得情緒很重，請停下來、深呼吸、喝水、回到當下。你可以改天再繼續，一次一點點就很好。</p>
+<p style="font-weight:bold;">這不是要「做對」，而是給內在一個說話的機會。每一次抽卡，都是一次溫柔的靠近自己。</p>
+</div>
+<div class="card-deck">
+<div class="card" id="roleCard">
+      🎭 <strong>角色卡</strong><br/>
+<span></span>
+<div class="description" id="desc-role"></div>
+<button onclick="drawCard('role')">抽牌</button>
+</div>
+<div class="card" id="sceneCard">
+      🏚 <strong>情境卡</strong><br/>
+<span></span>
+<div class="description" id="desc-scene"></div>
+<button onclick="drawCard('scene')">抽牌</button>
+</div>
+<div class="card" id="dialogueCard">
+      💬 <strong>對話卡</strong><br/>
+<span></span>
+<div class="description" id="desc-dialogue"></div>
+<button onclick="drawCard('dialogue')">抽牌</button>
+</div>
+<div class="card" id="transformCard">
+      🔄 <strong>轉化卡</strong><br/>
+<span></span>
+<div class="description" id="desc-transform"></div>
+<button onclick="drawCard('transform')">抽牌</button>
+</div>
+<div class="section">
+<h2>🔍 最後一步：觀點卡（請務必在完成前四張卡片後再進行）</h2>
+<p><strong>請先完成角色卡、情境卡、對話卡與轉化卡的抽取與體驗</strong>，再進行這最後一步。</p>
+<p>觀點卡的目的是幫助你以第三人稱或嶄新角度，重新理解剛剛經歷的內容。</p>
+</div>
+<div class="card" id="viewCard">
+      🧠 <strong>觀點卡</strong><br/>
+<span></span>
+<div class="description" id="desc-view"></div>
+<button onclick="drawCard('view')">抽牌</button>
+</div>
+</div>
+<div class="result-area">
+<h2>📝 演出記錄</h2>
+<p>請花一點時間，寫下你今天最重要的內在對話、情緒轉折或發現。</p>
+<textarea rows="6" style="width:100%; border-radius: 6px; padding: 0.5rem;"></textarea>
+</div>
+
+<div class="section">
+<h2>🌟 遊戲結語</h2>
+<p>謝謝你完成這場內在旅程。你剛剛做的，不只是一場抽卡與想像的遊戲，而是一場與自己深度對話的探索。</p>
+<p>你勇敢地面對了那些可能隱藏許久的情緒與記憶，給予了內在角色聲音與空間，並嘗試用新的角度去理解與轉化那些經歷。</p>
+<p>請記得，無論你在遊戲中看見什麼、感受到什麼，你都是值得被理解、被接納與被溫柔對待的。</p>
+<p><strong>你已經夠好了。你正在療癒。你不孤單。</strong></p>
+<p>我們希望這套卡牌能陪你在面對創傷與生命挑戰時，多一份支持與自我對話的可能。</p>
+</div>
+<div style="text-align:center; margin-top:2rem;">
+<button onclick="alert('謝謝你的分享，我們祝福你在這段旅程中持續被溫柔對待。')" style="padding: 0.75rem 1.5rem; background-color: #5a3e36; color: white; border: none; border-radius: 8px; font-size: 1rem;">
+      送出我的體驗</button>
+</div>
+
+<script>
+const cards = {
+  role: [
+    { text: "受傷的自己（記憶中那個無助或難過的你）", desc: "承載著過去經歷與情緒的自己，等待被理解與看見。" },
+    { text: "現在的自己（此時此刻的你）", desc: "有能力陪伴過去、觀察情緒、重新選擇的你。" },
+    { text: "本我（慾望與衝動的自己）", desc: "直接反應內在需求與情緒的部分，常常不被允許表達。" },
+    { text: "超我（內在評價與道德的聲音）", desc: "可能是內化他人的標準，也可能是你對自己的高要求。" },
+    { text: "內在照顧者（溫柔且願意保護你的人格部分）", desc: "在你心裡默默支持你的人格聲音，提醒你：你值得被愛與照顧。" }
+  ],
+  scene: [
+    { text: "一段印象深刻的情感", desc: "讓你至今仍記得的關係經驗，可能是甜美，也可能是痛苦。" },
+    { text: "一次發自內心的痛苦", desc: "你清楚記得那個讓你感到難以承受的時刻。" },
+    { text: "一場椎心刺骨的疼痛", desc: "某個讓你幾乎無法承受的經驗，情緒深刻到你難以言語。" },
+    { text: "一個無法向人說出口的秘密", desc: "你選擇隱藏或不敢說的部分，承載了不安與羞愧。" },
+    { text: "一個你假裝沒事的瞬間", desc: "你曾經壓抑情緒、表面裝作沒事，卻讓自己很累的那一刻。" }
+  ],
+  dialogue: [
+    { text: "當時的你會講什麼話？", desc: "設身處地回到當時，試著說出那句壓抑很久的話。" },
+    { text: "當下的感覺是什麼？", desc: "你那時可能覺得很委屈、生氣、孤單還是想被安慰？" },
+    { text: "那時的情感是怎麼樣的？", desc: "試著用情緒詞描述當時的狀態，例如害怕、羞愧、想哭。" },
+    { text: "如果當時可以，你會怎麼做？", desc: "回到那時的自己，假如可以選擇，你會有什麼行動？" },
+    { text: "那時的你其實想對誰說什麼？", desc: "針對某個重要他人，你其實內心早有話想講。" }
+  ],
+  transform: [
+    { text: "如果是現在你會做什麼？", desc: "用現在的眼光重新看這件事，你可能會有不一樣的選擇。" },
+    { text: "如果是未來你可能會有什麼反應？", desc: "想像幾年後的你如何理解、接住這段經驗。" },
+    { text: "如果換個想法你會怎麼做？", desc: "將觀點轉換，嘗試用更柔軟的視角看待那時的情況。" },
+    { text: "你現在能給過去的自己什麼？", desc: "從此時此刻出發，送出一句話或一種陪伴給那時候的你。" },
+    { text: "這段經驗讓你學會了什麼？", desc: "從這次經歷中你可能獲得的反思、力量或理解。" }
+  ],
+  view: [
+    { text: "如果我是當年的朋友，我會怎麼安慰那個我？", desc: "透過同理與友善的角度重新觀看自己，給予當時的你理解與愛。" },
+    { text: "用旁觀者的角度重看這一幕，我會對他說什麼？", desc: "提供更客觀或成熟的視角，幫助你與事件保持適當距離。" },
+    { text: "假如這是電影，你會希望主角怎麼走出來？", desc: "以創造性的方式想像轉變與希望，提升未來的可能性。" },
+    { text: "換成某位你當時在意的人，他會說什麼？", desc: "透過另一個你在意但非親人角色的眼光，重新理解這段故事。" },
+    { text: "把這段經歷畫成一幅圖，畫面會是什麼顏色、什麼形狀？", desc: "運用象徵與圖像表達情緒，幫助你從抽象中整理感受。" }
+  ]
+};
+
+function drawCard(type) {
+  const data = cards[type];
+  if (!data) return;
+
+  const idx = Math.floor(Math.random() * data.length);
+  const card = data[idx];
+  const span = document.querySelector(`#${type}Card span`);
+  const desc = document.querySelector(`#desc-${type}`);
+  if (span && desc) {
+    span.textContent = card.text;
+    desc.textContent = card.desc || "";
+    span.parentElement.classList.add("show");
+  }
+}
+</script>
+</script></body>
+</html>
